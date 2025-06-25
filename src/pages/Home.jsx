@@ -527,7 +527,7 @@ export const Home = () => {
                     </div>
                 </section>
 
-                {/* <section className="py-20 bg-gray-100">
+                <section className="py-20 bg-gray-100">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <h2 className="font-bold text-4xl text-center mb-15">
                             Our Tech Stack
@@ -572,7 +572,7 @@ export const Home = () => {
                             </div>
                         </div>
                     </div>
-                </section> */}
+                </section>
                 <section className='py-20 bg-gray-100 relative overflow-hidden'>
 
                     <h3
