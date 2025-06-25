@@ -5,29 +5,33 @@ import { Menu, X } from 'lucide-react';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   return (
     <>
-      <header className="sticky top-0 z-30 bg-white border-b border-gray-200">
+      <header className="sticky top-0 z-30 bg-white border-b border-gray-200 mx-auto max-w-7xl">
         <nav className="flex items-center justify-between max-w-7xl mx-auto px-2 sm:px-4 py-4">
-          <div className="text-2xl font-bold">
-            <span className="text-violet-600">Synergy</span> Algo
-          </div>
-
+          <NavLink
+            to="/"
+            className="text-2xl lg:text-3xl font-extrabold tracking-tight"
+          >
+            <span className="text-neutral-900">Synergy</span>
+            <span className="text-red-600 ml-1">Algo</span>
+          </NavLink>
           <ul className="hidden md:flex space-x-8 lg:space-x-10 font-semibold text-gray-500 text-sm">
             <li>
-              <NavLink to='#' className="hover:text-black transition-colors">About us</NavLink>
+              <NavLink to='/about' className="hover:text-black transition-colors">About us</NavLink>
             </li>
             <li>
-              <NavLink to='#' className="hover:text-black transition-colors">Services</NavLink>
+              <NavLink to='/services' className="hover:text-black transition-colors">Services</NavLink>
             </li>
             <li>
-              <NavLink to='#' className="hover:text-black transition-colors">Cases</NavLink>
+              <NavLink to='/cases' className="hover:text-black transition-colors">Cases</NavLink>
             </li>
             <li>
               <NavLink to='#' className="hover:text-black transition-colors">Technologies</NavLink>
             </li>
             <li>
-              <NavLink to='#' className="hover:text-black transition-colors">Contacts</NavLink>
+              <NavLink to='/contact' className="hover:text-black transition-colors">Contacts</NavLink>
             </li>
           </ul>
 
@@ -63,7 +67,7 @@ export const Navbar = () => {
             <ul className="flex-1 flex flex-col space-y-6 font-semibold text-gray-700">
               <li>
                 <NavLink
-                  to='#'
+                  to='/about'
                   className="block py-3 hover:text-violet-600 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
@@ -72,20 +76,20 @@ export const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to='#'
-                  className="block py-3 hover:text-violet-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Services
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to='#'
+                  to='/cases'
                   className="block py-3 hover:text-violet-600 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Cases
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/services'
+                  className="block py-3 hover:text-violet-600 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Services
                 </NavLink>
               </li>
               <li>
@@ -99,7 +103,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to='#'
+                  to='/contact'
                   className="block py-3 hover:text-violet-600 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
@@ -116,7 +120,7 @@ export const Navbar = () => {
 
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/30 bg-opacity-50 z-30"
+            className="fixed inset-0 bg-black/95 bg-opacity-50 z-30"
             onClick={() => setIsOpen(false)}
           />
         )}
