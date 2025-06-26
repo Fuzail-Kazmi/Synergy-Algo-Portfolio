@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-30 bg-white border-b border-gray-200 mx-auto max-w-7xl">
+      <header className="sticky top-0 z-30 bg-white border-b border-gray-200 ">
         <nav className="flex items-center justify-between max-w-7xl mx-auto px-2 sm:px-4 py-4">
           <NavLink
             to="/"

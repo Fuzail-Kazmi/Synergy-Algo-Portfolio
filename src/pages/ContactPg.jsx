@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 export const ContactPg = () => {
   return (
     <>
-      <section className=" flex justify-center pb-20 md:h-[95vh]" style={{ background: "linear-gradient(to right, #5322e7, #2153f6)" }}>
+      <section className="flex justify-center pt-10 pb-20 md:h-[95vh]" style={{ background: "linear-gradient(to right, #5322e7, #2153f6)" }}>
         <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 flex flex-col md:flex-row text-white w-full">
           <div className="flex flex-col justify-between md:w-1/2 pt-20 md:h-[512px]">
             <div>

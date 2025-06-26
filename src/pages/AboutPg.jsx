@@ -21,7 +21,7 @@ export const AboutSec = () => {
     return (
         <>
             <section className="pt-20 bg-[#f5f5fb]">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
                     <div className="text-center">
                         <div className='font-bold text-4xl text-center mb-10'>About us</div>
                         <div className='flex flex-col md:justify-center md:items-center gap-4 bg-white p-5 rounded-md'>

@@ -33,7 +33,7 @@ export const OurTechnologySec = () => {
             },
             {
                 name: 'TypeScript',
-                imgURL: 'https://media.canva.com/v2/image-resize/format:PNG/height:512/quality:100/uri:ifs%3A%2F%2FM%2F340e299d-9214-4979-96d4-851b7698c047/watermark:F/width:512?csig=AAAAAAAAAAAAAAAAAAAAAEaYzGoWZQJwv9emVrghINOd5HdULLH1KWvUgG3qpLeT&exp=1750949403&osig=AAAAAAAAAAAAAAAAAAAAAPJO-khNkkfbZyPBHoxw5vEbZnF530bcd7j_lgd7fjkF&signer=media-rpc&x-canva-quality=thumbnail_large'
+                imgURL: 'https://cdn.worldvectorlogo.com/logos/typescript.svg'
             },
             {
                 name: 'Next.js',
@@ -64,7 +64,7 @@ export const OurTechnologySec = () => {
             },
             {
                 name: 'Django',
-                imgURL: 'https://media.canva.com/v2/image-resize/format:PNG/height:550/quality:100/uri:ifs%3A%2F%2FM%2Fd5184db5-67af-455d-95a0-0269a7394d64/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAALeSFnYUNCz1E6B9c8Jz1ONMOiAgbRc8wwhVHAG_dYLj&exp=1750946496&osig=AAAAAAAAAAAAAAAAAAAAAI9hSxk0JyrSUCFFEqcDV011hhjwtaGklIyQLsZZD7ma&signer=media-rpc&x-canva-quality=thumbnail_large'
+                imgURL: 'https://cdn.worldvectorlogo.com/logos/django-community.svg'
             },
             {
                 name: 'Python',
@@ -119,10 +119,10 @@ export const OurTechnologySec = () => {
     
     return (
         <>
-            <section className="py-20 bg-[#f5f5fb]">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <section className="pb-20 bg-[#f5f5fb]">
+                <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
                     <h2 className="font-bold text-4xl text-center mb-15">
-                        Technology we use
+                        Technology <br/> we use
                     </h2>
 
                     <div className="flex overflow-x-auto pb-2 mb-8" style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}>
@@ -142,8 +142,8 @@ export const OurTechnologySec = () => {
                         </div>
                     </div>
 
-                    <div className="p-6">
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 place-items-center justify-center">
+                    <div className="px-2 sm:px-4 md:px-6 lg:px-8">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 md:gap-3 items-center justify-center">
                             {techContent[activeTab].map((tech, index) => (
                                 <div
                                     key={index}

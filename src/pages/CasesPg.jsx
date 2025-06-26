@@ -39,15 +39,15 @@ export const CaseDetail = () => {
 
   return (
     <>
-      <section className="relative bg-gradient-to-b from-[#f5f5fb] to-gray-50 pb-20">
+      <section className="relative bg-gradient-to-b from-[#c5c5ff] to-gray-50 py-20">
         <div className="absolute inset-0 bg-gradient-to-b from-red-200 to-transparent h-1/2 z-0"></div>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-15">
-          <h2 className="font-bold text-3xl sm:text-4xl text-center mb-15">
+        <div className="relative z-10 mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
+          <h2 className="font-bold text-4xl text-center mb-15">
             Our Cases
           </h2>
 
-          <div className="relative">
+          <div className="relative mb-8">
             <div className="lg:flex lg:justify-center lg:items-center overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               <div className="flex flex-nowrap justify-start gap-2 min-w-max px-4">
                 {industries.map((industry, index) => (
@@ -66,9 +66,6 @@ export const CaseDetail = () => {
               </div>
             </div>
           </div>
-
-          <div className="border-t border-gray-300 mt-2 mb-6"></div>
-
           <div className="grid grid-cols-1 gap-6 md:gap-8">
             {cases.map((caseItem, index) => (
               <div
@@ -91,15 +88,13 @@ export const CaseDetail = () => {
                               </span>
                             ))}
                           </div>
-                          <p className="text-sm sm:text-base text-gray-600 mb-4 md:w-[80%]">{caseItem.description}</p>
-                          <div className="flex-shrink-0 md:w-40 lg:w-48 flex md:flex-col justify-between items-end md:items-start mt-4 md:mt-0 ">
-                            <button className="flex items-center gap-2 text-red-600 font-medium text-sm sm:text-base cursor-pointer">
-                              See case study <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
-                            </button>
+                          <p className="text-sm text-gray-600 mb-4 md:w-[80%]">{caseItem.description}</p>
+                          <div className="flex items-center gap-2 px-3 py-1.5 text-xs font-bold uppercase border border-[#131426]/10 rounded-full bg-gradient-to-r from-[#9935e8] to-[#e85535] bg-clip-text text-transparent w-max cursor-pointer">
+                            View Case Study <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-[#e85535]" />
                           </div>
                         </div>
                         <div className="p-2 sm:p-3 bg-blue-50 rounded-lg h-80 md:h-full w-full">
-                          <img src={caseItem.imgURL} className='h-full w-full object-contain'/>
+                          <img src={caseItem.imgURL} className='h-full w-full object-contain' />
                         </div>
                       </div>
                     </div>

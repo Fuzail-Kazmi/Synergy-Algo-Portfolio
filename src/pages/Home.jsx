@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 export const Home = () => {
     return (
         <>
-            <main className='mx-auto max-w-7xl'>
+            <main className='max-w-7xl mx-auto'>
                 <LandingMainSec />
                 <ServicesSec />
                 <OurValueSec />
@@ -180,7 +180,7 @@ export const OurValueSec = () => {
                                     </div>
                                     <div>
                                         <h5 className="text-2xl font-bold mb-4">{value.title}</h5>
-                                        <p className="text-base">
+                                        <p className="text-sm">
                                             {value.description}
                                         </p>
                                     </div>
@@ -205,7 +205,7 @@ export const OurWorkSec = () => {
         <>
             <section className="bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] flex gap-2">
                 <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 md:w-3/5">
-                    <div className="flex flex-col justify-end py-16 pr-5 bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] text-[#131426]">
+                    <div className="flex flex-col justify-end py-16 pr-5 bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] text-[#131426] ">
                         <div className="px-3 py-1 mb-6 text-xs font-bold uppercase border border-[#131426]/10 rounded-full bg-gradient-to-r from-[#9935e8] to-[#e85535] bg-clip-text text-transparent w-min">
                             Processes
                         </div>
@@ -291,7 +291,7 @@ export const OurWorkSec = () => {
                                         </p>
                                         {openSection === 1 && (
                                             <div className="flex flex-col md:flex-row gap-2 mt-8 w-full">
-                                                <div className="flex md:flex-col md:justify-center items-center bg-white p-4 rounded-lg w-full md:w-1/6">
+                                                <div className="flex md:flex-col md:justify-center lg:items-start items-center bg-white p-4 rounded-lg w-full md:w-1/4">
                                                     <div className="min-w-[44px] text-2xl">1</div>
                                                     <div className="w-full">
                                                         <h6 className="text-base font-bold">Design</h6>
@@ -443,8 +443,8 @@ export const OurCasesSec = () => {
                 >
                     Our WORKS
                 </h3>
-                <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10'>
-                    <h2 className="font-bold text-3xl sm:text-4xl text-center mb-8 sm:mb-12">
+                <div className='mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 relative z-10'>
+                    <h2 className="font-bold text-4xl text-center mb-15">
                         Our Cases
                     </h2>
 
@@ -462,7 +462,6 @@ export const OurCasesSec = () => {
                                             src={item.imageUrl}
                                             width={500}
                                             height={280}
-                                            loading="lazy"
                                         />
                                     </div>
                                 </div>
@@ -471,16 +470,19 @@ export const OurCasesSec = () => {
                                     <h4 className="text-xl md:text-2xl font-bold text-gray-900">
                                         {item.title}
                                     </h4>
-                                    <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                                    <p className="text-sm    text-gray-700 leading-relaxed">
                                         {item.description}
                                     </p>
                                     <div className="pt-1 sm:pt-2">
-                                        <NavLink
+                                        {/* <NavLink
                                             to="#"
                                             className="inline-block px-5 py-1.5 sm:px-6 sm:py-2 text-xs sm:text-sm font-medium text-[#914dff] border border-[#914dff] rounded-full hover:bg-[#914dff] hover:text-white transition-colors duration-300"
                                         >
                                             View Case Study
-                                        </NavLink>
+                                        </NavLink> */}
+                                        <div className="flex items-center gap-2 px-3 py-1.5 text-xs font-bold uppercase border border-[#131426]/10 rounded-full bg-gradient-to-r from-[#9935e8] to-[#e85535] bg-clip-text text-transparent w-max cursor-pointer">
+                                            View Case Study <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-[#e85535]" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -495,14 +497,14 @@ export const OurCasesSec = () => {
 export const ContactSec = () => {
     return (
         <>
-            <section className="flex justify-center pb-20" style={{ background: "linear-gradient(to right, #5322e7, #2153f6)" }}>
+            <section className="flex justify-center pt-10 pb-20" style={{ background: "linear-gradient(to right, #5322e7, #2153f6)" }}>
                 <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 flex flex-col md:flex-row text-white">
                     <div className="flex flex-col justify-between md:w-1/2 pt-20 md:h-[512px]">
                         <div>
-                            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-left">
+                            <h1 className="text-3xl md:text-4xl font-bold mb-10 text-left">
                                 Let's build something<br />great together
                             </h1>
-                            <p className="text-sm md:text-base lg:text-lg w-[90%]">
+                            <p className="text-sm w-[90%]">
                                 We believe in turning ideas into reality and we're ready to join your journey. Reach out to
                                 us and let's start discussing your project.
                             </p>
