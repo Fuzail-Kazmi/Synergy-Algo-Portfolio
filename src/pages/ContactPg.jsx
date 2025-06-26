@@ -1,6 +1,5 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react';
-import { FooterSec } from './Home'
 
 export const ContactPg = () => {
   return (
@@ -97,7 +96,6 @@ export const ContactPg = () => {
           </div>
         </div>
       </section>
-      <FooterSec />
     </>
   )
 }

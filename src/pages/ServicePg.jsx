@@ -1,10 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
+import { ContactSec, ServicesSec } from './Home';
 
 export const ServicePg = () => {
     return (
         <>
+            <ServicesSec/>
             <OurTechnologySec/>
+            <ContactSec/>
         </>
     )
 }
@@ -58,7 +61,15 @@ export const OurTechnologySec = () => {
             {
                 name: 'Express',
                 imgURL: 'https://cdn.worldvectorlogo.com/logos/express-109.svg'
-            }
+            },
+            {
+                name: 'Django',
+                imgURL: 'https://media.canva.com/v2/image-resize/format:PNG/height:550/quality:100/uri:ifs%3A%2F%2FM%2Fd5184db5-67af-455d-95a0-0269a7394d64/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAALeSFnYUNCz1E6B9c8Jz1ONMOiAgbRc8wwhVHAG_dYLj&exp=1750946496&osig=AAAAAAAAAAAAAAAAAAAAAI9hSxk0JyrSUCFFEqcDV011hhjwtaGklIyQLsZZD7ma&signer=media-rpc&x-canva-quality=thumbnail_large'
+            },
+            {
+                name: 'Python',
+                imgURL: 'https://cdn.worldvectorlogo.com/logos/python-5.svg'
+            },
         ],
         'Mobile app': [
             {

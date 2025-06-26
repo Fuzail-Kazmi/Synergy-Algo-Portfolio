@@ -5,6 +5,7 @@ import { ServicePg } from './pages/ServicePg';
 import { AboutPg } from './pages/AboutPg';
 import { CasesPg } from './pages/CasesPg';
 import { ContactPg } from './pages/ContactPg';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<AboutPg />} />
         <Route path="/contact" element={<ContactPg />} />
       </Routes>
+      <Footer/>
     </Router>
     </>
   )

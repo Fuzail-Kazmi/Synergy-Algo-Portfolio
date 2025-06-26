@@ -1,7 +1,7 @@
 import React from 'react'
 import { MoveRight } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
-import { ContactSec, FooterSec, OurValueSec, OurWorkSec, ServicesSec } from './Home'
+import { ContactSec, OurValueSec, OurWorkSec, ServicesSec } from './Home'
 
 export const AboutPg = () => {
     return (
@@ -12,7 +12,6 @@ export const AboutPg = () => {
                 <OurValueSec />
                 <OurWorkSec />
                 <ContactSec />
-                <FooterSec />
             </div>
         </>
     )
