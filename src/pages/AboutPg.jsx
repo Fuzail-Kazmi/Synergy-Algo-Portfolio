@@ -6,7 +6,7 @@ import { ContactSec, OurValueSec, OurWorkSec, ServicesSec } from './Home'
 export const AboutPg = () => {
     return (
         <>
-            <div className='mx-auto max-w-7xl'>
+            <div>
                 <AboutSec />
                 <ServicesSec />
                 <OurValueSec />

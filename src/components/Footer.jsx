@@ -32,17 +32,17 @@ export const Footer = () => {
                 "Healthcare Development"
             ]
         },
-        {
-            title: "Cases",
-            items: [
-                "Ecommerce store",
-                "Point of sales (POS)",
-                "Powerful website for the enterprise",
-                "ERP for a new gen real estate",
-                "Computer vision for ID recognition",
-                "See more cases"
-            ]
-        },
+        // {
+        //     title: "Cases",
+        //     items: [
+        //         "Ecommerce store",
+        //         "Point of sales (POS)",
+        //         "Powerful website for the enterprise",
+        //         "ERP for a new gen real estate",
+        //         "Computer vision for ID recognition",
+        //         "See more cases"
+        //     ]
+        // },
         {
             title: "Company",
             items: [
@@ -71,7 +71,7 @@ export const Footer = () => {
 
     return (
         <footer
-            className="py-20 bg-[#f5f5fb]"
+            className="pt-20 bg-[#f5f5fb]"
             style={{
                 background: 'radial-gradient(34.45% 46.83% at 77.4% 50%, rgba(161, 28, 208, 0.1) 0, rgba(19, 20, 38, 0) 100%), radial-gradient(30.13% 51.49% at 18.2% 43.83%, rgba(208, 93, 28, 0.1) 0, rgba(19, 20, 38, 0) 100%), #fff'
             }}
@@ -114,24 +114,20 @@ export const Footer = () => {
                         ))}
                     </div>
 
-                    <div className="pt-6 border-t border-[#ebebeb]">
-                        <div className="text-lg font-semibold tracking-tight">
-                                <span className="text-neutral-900">Synergy</span>
-                                <span className="text-red-600 ml-1">Algo</span>
+                    <div className='flex items-center justify-between'>
+                        <div className="pt-6 border-t border-[#ebebeb]">
+                            <div className='w-35'>
+                                <img src="https://media.discordapp.net/attachments/1019570480782524478/1387922389081526373/synergyalgo-logo.png?ex=685fc3b3&is=685e7233&hm=a533dbac40a5cf017d77bbf0fbfce0a8f8c65c29dcb23f9f6bfdc5f7c834c179&=&format=webp&quality=lossless" alt="Logo" className='w-full h-full object-contain' />
                             </div>
-                        <div className="flex flex-col space-y-2 text-xs mt-3">
-                            <p>+1 (415) 655-1002</p>
-                            <p>333 W San Carlos St Suite 600, San Jose, CA, USA, 95110</p>
                         </div>
-                    </div>
 
-                    <div className="flex flex-col space-y-4 pt-6 border-t border-[#f7f7f9]">
-                        <div className="flex items-center justify-between">
-                            <div className="text-xs">PCTL DSS</div>
-                            <div className="flex items-center text-xs">
-                                <NavLink to="#" className="underline">Privacy Policy</NavLink>
-                                <span className="text-[#b1b2c1] mx-2">|</span>
-                                <span>© 2025, Difco US Inc.</span>
+                        <div className="flex flex-col pt-6 border-t border-[#f7f7f9]">
+                            <div className="flex items-center justify-between">
+                                <div className="flex items-center text-xs">
+                                    <NavLink to="#" className="underline">Privacy Policy</NavLink>
+                                    <span className="text-[#b1b2c1] mx-2">|</span>
+                                    <span>© 2025, Syenergy Algo Inc.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,19 +155,18 @@ export const Footer = () => {
                     </div>
 
                     <div className="flex flex-row py-10 border-t border-[#f7f7f9] items-center justify-between gap-20">
-                        <div className="flex-1 flex flex-row justify-between items-center">
-                            <div className="text-xl font-bold tracking-tight">
-                                <span className="text-neutral-900">Synergy</span>
-                                <span className="text-red-600 ml-1">Algo</span>
-                            </div>
-                            <div className="flex items-center">
-                                <p className="text-xs">+1 (415) 655-1002</p>
-                                <div className=" text-[#b1b2c1] px-2">|</div>
-                                <p className="text-xs">830 Stewart Drive, #212, Sunnyvale, CA, USA, 94085</p>
+                        <div className="flex-1 flex flex-row gap-4 items-center">
+                            <NavLink to="/" className="w-35">
+                                <img src="https://media.discordapp.net/attachments/1019570480782524478/1387922389081526373/synergyalgo-logo.png?ex=685fc3b3&is=685e7233&hm=a533dbac40a5cf017d77bbf0fbfce0a8f8c65c29dcb23f9f6bfdc5f7c834c179&=&format=webp&quality=lossless" alt="Logo" className='h-full w-full object-contain' />
+                            </NavLink>
+                            <div className="flex items-center gap-2">
+                                <p className="text-xs text-gray-500">+1 (415) 655-1002</p>
+                                <span className='text-xs text-gray-500'>|</span>
+                                <p className="text-xs text-gray-500">synergyalgo@gmail.com</p>
                             </div>
                         </div>
 
-                        <div className="flex-1 flex flex-row justify-between items-center">
+                        <div className="flex-1 flex flex-row justify-between items-center gap-4">
                             <div className="flex gap-2">
                                 {icons.map((img, index) => (
                                     <div key={img.id}>

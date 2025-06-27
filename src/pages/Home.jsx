@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 export const Home = () => {
     return (
         <>
-            <main className='max-w-7xl mx-auto'>
+            <main>
                 <LandingMainSec />
                 <ServicesSec />
                 <OurValueSec />
@@ -203,9 +203,9 @@ export const OurWorkSec = () => {
 
     return (
         <>
-            <section className="bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] flex gap-2">
-                <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6 md:w-3/5">
-                    <div className="flex flex-col justify-end py-16 pr-5 bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] text-[#131426] ">
+            <section className="bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] flex gap-2 relative">
+                <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
+                    <div className="flex flex-col justify-end py-16 pr-5 bg-gradient-to-b from-[#f7efe3] to-[#f7e4e3] text-[#131426] md:w-4/6">
                         <div className="px-3 py-1 mb-6 text-xs font-bold uppercase border border-[#131426]/10 rounded-full bg-gradient-to-r from-[#9935e8] to-[#e85535] bg-clip-text text-transparent w-min">
                             Processes
                         </div>
@@ -382,8 +382,8 @@ export const OurWorkSec = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:block w-2/5">
-                    <img src="https://diffco.us/wp-content/themes/diffconew/static-template/build/images/home-v4/process-picture@3x.jpg" className='h-full' />
+                <div className="hidden md:block absolute right-0 top-0 h-full w-2/6">
+                    <img src="https://diffco.us/wp-content/themes/diffconew/static-template/build/images/home-v4/process-picture@3x.jpg" className='h-full w-full'/>
                 </div>
             </section>
         </>
@@ -474,12 +474,6 @@ export const OurCasesSec = () => {
                                         {item.description}
                                     </p>
                                     <div className="pt-1 sm:pt-2">
-                                        {/* <NavLink
-                                            to="#"
-                                            className="inline-block px-5 py-1.5 sm:px-6 sm:py-2 text-xs sm:text-sm font-medium text-[#914dff] border border-[#914dff] rounded-full hover:bg-[#914dff] hover:text-white transition-colors duration-300"
-                                        >
-                                            View Case Study
-                                        </NavLink> */}
                                         <div className="flex items-center gap-2 px-3 py-1.5 text-xs font-bold uppercase border border-[#131426]/10 rounded-full bg-gradient-to-r from-[#9935e8] to-[#e85535] bg-clip-text text-transparent w-max cursor-pointer">
                                             View Case Study <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-[#e85535]" />
                                         </div>
