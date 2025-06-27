@@ -17,7 +17,7 @@ export const Navbar = () => {
             <span className="text-neutral-900">Synergy</span>
             <span className="text-red-600 ml-1">Algo</span>
           </NavLink> */}
-          <NavLink to="/" className="w-43">
+          <NavLink to="/" className="w-30 md:w-43">
             <img src="https://media.discordapp.net/attachments/1019570480782524478/1387922389081526373/synergyalgo-logo.png?ex=685fc3b3&is=685e7233&hm=a533dbac40a5cf017d77bbf0fbfce0a8f8c65c29dcb23f9f6bfdc5f7c834c179&=&format=webp&quality=lossless" alt="Logo" className='h-full w-full object-contain' />
           </NavLink>
           <ul className="hidden md:flex space-x-8 lg:space-x-10 font-semibold text-gray-500 text-sm">

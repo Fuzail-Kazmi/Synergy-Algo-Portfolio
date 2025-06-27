@@ -114,10 +114,15 @@ export const Footer = () => {
                         ))}
                     </div>
 
-                    <div className='flex items-center justify-between'>
-                        <div className="pt-6 border-t border-[#ebebeb]">
+                    <div className='flex flex-col'>
+                        <div className="flex flex-col gap-5 pt-6 border-t border-[#ebebeb]">
                             <div className='w-35'>
                                 <img src="https://media.discordapp.net/attachments/1019570480782524478/1387922389081526373/synergyalgo-logo.png?ex=685fc3b3&is=685e7233&hm=a533dbac40a5cf017d77bbf0fbfce0a8f8c65c29dcb23f9f6bfdc5f7c834c179&=&format=webp&quality=lossless" alt="Logo" className='w-full h-full object-contain' />
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <p className="text-xs text-gray-500">+1 (415) 655-1002</p>
+                                <span className='text-xs text-gray-500'>|</span>
+                                <p className="text-xs text-gray-500">synergyalgo@gmail.com</p>
                             </div>
                         </div>
 
